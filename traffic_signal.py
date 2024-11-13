@@ -53,11 +53,7 @@ def train_model(X, y):
 model = train_model(X, y)
 
 # Step 4: Inference for Real-Time Decision Making
-def predict_signal_time(image_path, model, roi_coordinates=(100, 100, 200, 200)):
-    processed_image = preprocess_image(image_path, roi_coordinates)
-    traffic_density = extract_traffic_density_features(processed_image)
-    duration = model.predict(np.array([[traffic_density]]))
-    return duration
+
 
 # Example call
 image_path = "sample_traffic_image.jpg"
