@@ -27,21 +27,7 @@ def preprocess_image(image_path, roi_coordinates):
 
 
 # Step 2: Feature Extraction
-def extract_traffic_density_features(processed_image):
-    """
-    Extract features related to traffic density.
-    Args:
-        processed_image (np.array): Preprocessed image with ROI.
-    Returns:
-        float: Estimated traffic density.
-    """
-    # Flatten and cluster image pixels to estimate density
-    pixels = processed_image.reshape(-1, 1)
-    kmeans = KMeans(n_clusters=2, random_state=0).fit(pixels)
-    high_traffic_cluster = np.sum(kmeans.labels_)
-    traffic_density = high_traffic_cluster / len(pixels)
-    return traffic_density
-    
+
 # Step 3: Model Training
 # Sample data (traffic density, light duration)
 # Replace with actual data
