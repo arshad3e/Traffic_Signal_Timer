@@ -1,3 +1,4 @@
+# Also try to using different libraries available not only scikit
 import cv2
 import numpy as np
 from sklearn.cluster import KMeans
