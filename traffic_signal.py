@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Step 1: Image Preprocessing
+#see if we can use free models avaialbale from hugging face
 def preprocess_image(image_path, roi_coordinates):
     """
     Preprocess the image to focus on regions of interest (ROI) and extract features such as traffic information.
