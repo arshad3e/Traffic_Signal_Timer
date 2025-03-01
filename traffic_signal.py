@@ -1,4 +1,5 @@
 # Also try to using different libraries available not only scikit
+#use tensor flow and YOLO to see if could be useful in this scenario
 import cv2
 import numpy as np
 from sklearn.cluster import KMeans
